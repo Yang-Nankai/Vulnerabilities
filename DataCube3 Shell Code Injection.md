@@ -5,13 +5,13 @@
 
 The DataCube3 from [F-logic](https://www.f-logic.jp/) is a compact terminal measurement system for photovoltaic power generation systems.
 
-![[Pasted image 20240503010448.png]]
+![product](https://github.com/Yang-Nankai/Vulnerabilities/blob/main/Pasted%20image%2020240503010448.png)
 
 # Affected Products
 
 All F-logic DataCube3 measurement system version 1.0.
 
-![[Pasted image 20240503010620.png]]
+![product-version](https://github.com/Yang-Nankai/Vulnerabilities/blob/main/Pasted%20image%2020240503010620.png)
 
 # Vulnerability Summary
 
@@ -23,11 +23,11 @@ DataCube3 is affected by a command execution injection vulnerability, where file
 
 There is a command injection vulnerability in `/admin/transceiver_schedule.php` that does not require authentication. The uploaded file name is not filtered and the file name is concatenated during execution, so command injection can be performed through this vulnerability. In the example, we will show how to exploit the command injection in the file name and write a minimal PHP WebShell.
 
-![[Pasted image 20240503012751.png]]
+![burpsuite](https://github.com/Yang-Nankai/Vulnerabilities/blob/main/Pasted%20image%2020240503012751.png)
 
 Then visit `/admin/flag.php` and you will find that the webshell has been written successfully.
 
-![[Pasted image 20240503012943.png]]
+![shell](https://github.com/Yang-Nankai/Vulnerabilities/blob/main/Pasted%20image%2020240503012943.png)
 
 # Recommendation Fixes / Remediation
 
@@ -37,7 +37,7 @@ Escape command injection splicing and ensure that all requests sent to the backe
 
 As of 2 May 2024, there were 328 F-logic DataCube3 devices exposed to the internet and were affected by the vulnerabilities discovered.
 
-![[Pasted image 20240503013439.png]]
+![fofa](https://github.com/Yang-Nankai/Vulnerabilities/blob/main/Pasted%20image%2020240503013439.png)
 
 # References
 

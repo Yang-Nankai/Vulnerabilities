@@ -122,3 +122,8 @@ As of 2 May 2024, there were 328 F-logic DataCube3 devices exposed to the intern
 [https://www.f-logic.jp](https://www.f-logic.jp/)
 
 [https://www.f-logic.jp/pdf/support/manual_product/manual_product_datacube3_ver1.0_sc.pdf](https://www.f-logic.jp/pdf/support/manual_product/manual_product_datacube3_ver1.0_sc.pdf)
+
+# CVE Lists
+
+- [CVE-2024-34852](https://www.cve.org/CVERecord?id=CVE-2024-34852)
+- [CVE-2024-34854](https://www.cve.org/CVERecord?id=CVE-2024-34854)
